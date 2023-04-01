@@ -1,11 +1,9 @@
 package org.example.HomeWork1;
-public class HotDrink extends Drink {
+public class HotDrink extends Product {
     Integer temperature;
-    public HotDrink(String nameDrink, Integer price, Integer volume,  Integer temperature) {
-        super(nameDrink, price, volume);
+    public HotDrink(String nameProduct, Integer price, Integer temperature) {
+        super(nameProduct, price);
         this.temperature = temperature;
     }
-    public Integer getTemperature() {
-        return  temperature;
-    }
+
 }

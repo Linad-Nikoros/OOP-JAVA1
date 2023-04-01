@@ -1,12 +1,12 @@
 package org.example.HomeWork1;
-import java.util.Arrays;
+import java.util.List;
 public class Main {
     public static void main(String[] args) {
-        HotDrinksVendingMachine hotDrinkVenMach = new HotDrinksVendingMachine(Arrays.asList(
-        new  HotDrink("greenTea", 40, 300, 60),
-        new  HotDrink("blackTea", 40, 250, 55),
-        new  HotDrink("coffee", 65, 200, 90)));
-
-        System.out.println(hotDrinkVenMach.getProduct("greenTea",300,60));
+        VendingMachine VenMach = new VendingMachine(List.of(
+                new Drink("greenTea", 40, 300),
+                new Drink("blackTea", 40, 250),
+                new HotDrink("coffee", 65, 200),
+                new ChocolateBars("Mars", 65, 100)));
+        System.out.println(VenMach.getProduct("greenTea",40));
     }
 }

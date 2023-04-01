@@ -1,23 +1,9 @@
 package org.example.HomeWork1;
-public class Drink {
-    String nameDrink;
-    Integer price;
+public class Drink extends Product{
     Integer  volume;
-    public Drink(String nameDrink, int price, int volume) {
-        this.nameDrink = nameDrink;
+    public Drink(String nameProduct, Integer price, Integer volume) {
+        super(nameProduct, price);
         this.volume = volume;
-        this.price = price;
-    }
-    public  String getNameDrink() {
-        return nameDrink;
-    }
-
-    public Integer getPrice() {
-        return price;
-    }
-
-    public Integer getVolume() {
-        return volume;
     }
 
 }
